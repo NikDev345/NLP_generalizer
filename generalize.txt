@@ -1,0 +1,9 @@
+Rahul Sharma is a 24-year-old software engineer living in Bengaluru, India.
+He works at Infosys and previously interned at Google India.
+
+His email address is rahul.sharma24@gmail.com and his phone number is +91-9876543210.
+
+Rahul completed his Bachelor of Technology in Computer Science from IIT Bombay in 2023.
+Currently, he is working on an artificial intelligence project related to natural language processing.
+
+Last month, Rahul traveled from Bengaluru to Mumbai for an office conference organized by Infosys.
