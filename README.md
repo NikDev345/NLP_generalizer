@@ -1,4 +1,4 @@
-#🧠 NLP Data Generalization Tool
+🧠 NLP Data Generalization Tool
 
 A principled Natural Language Processing (NLP) web application that generalizes and anonymizes user-uploaded text data using a hybrid, real-world approach:
 
@@ -8,7 +8,7 @@ Transformer-based Named Entity Recognition (NER) for reliable entities
 
 This project focuses on correct system design, not cosmetic or forced outputs.
 
-#🚀 Features
+🚀 Features
 
 Upload .txt or .csv files from the user end
 
@@ -38,7 +38,7 @@ Clean UI built with Streamlit
 
 Download generalized output as a text file
 
-#🧠 Design Philosophy (Important)
+🧠 Design Philosophy (Important)
 
 This project intentionally avoids forcing perfect-looking output.
 
@@ -58,7 +58,7 @@ This project intentionally avoids forcing perfect-looking output.
 
 This mirrors real-world NLP system design used in production environments.
 
-#🏗️ Architecture Overview
+🏗️ Architecture Overview
 User Upload
     ↓
 Rule-based Masking
@@ -71,8 +71,8 @@ Generalized Output
     ↓
 Downloadable File
 
-#🧪 Example
-##📄 Input Text
+🧪 Example
+📄 Input Text
 
 Rahul Sharma is a 24-year-old software engineer living in Bengaluru, India.
 He works at Infosys and previously interned at Google.
@@ -81,9 +81,6 @@ His email address is rahul@gmail.com and his phone number is +91 9876543210.
 
 Rahul completed his Bachelor of Technology in Computer Science from IIT Bombay in 2023.
 Last month, Rahul traveled from Bengaluru to Mumbai for an office conference organized by Infosys.
-
-✨ Generalized Output
-<div style=" border: 2px solid #7c3aed; border-radius: 10px; padding: 16px; background-color: #0f172a; color: #e5e7eb; font-family: monospace; ">
 
 <strong>✨ GENERALIZED OUTPUT</strong>
 
@@ -103,11 +100,11 @@ PERSON traveled from GPE to GPE for an office conference organized by ORG.
 
 </div>
 
-#⚠️ Note
+⚠️ Note
 Minor imperfections are expected and accepted by design.
 The system prioritizes correctness and generalization, not forced perfection.
 
-#🛠️ Tech Stack
+🛠️ Tech Stack
 
 Python 3.10+
 
@@ -121,7 +118,7 @@ Pandas
 
 Regex (deterministic masking)
 
-#📦 Installation & Setup
+📦 Installation & Setup
 1️⃣ Clone the repository
 git clone https://github.com/your-username/nlp-data-generalizer.git
 cd nlp-data-generalizer
