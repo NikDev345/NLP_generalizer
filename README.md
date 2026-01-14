@@ -31,21 +31,11 @@ Allows users to download the generalized text
 
 This mirrors how real NLP systems are designed in production environments.
 
-🏗️ System Architecture
-User Upload
-   ↓
-Rule-based Masking
-(Email, Phone, Age, Year, Degree)
-   ↓
-NLP Named Entity Recognition
-(PERSON, ORG, GPE, LOC)
-   ↓
-Generalized Output
-   ↓
-Downloadable Text File
 
 🧪 Example
+
 📄 Input Text
+
 Rahul Sharma is a 24-year-old software engineer living in Bengaluru, India.
 He works at Infosys and previously interned at Google.
 
