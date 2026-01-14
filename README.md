@@ -1,79 +1,51 @@
-🧠 NLP Data Generalization Tool
+🧠 NLP Generalizer
 
-A principled Natural Language Processing (NLP) web application that generalizes and anonymizes user-uploaded text data using a hybrid, real-world approach:
+A principled NLP web application that generalizes and anonymizes user-uploaded text data using a hybrid, real-world approach.
 
-Deterministic rule-based masking for structured data
+This project is designed with system correctness and generalization in mind — not cosmetic or forced outputs.
 
-Transformer-based Named Entity Recognition (NER) for reliable entities
+✨ What This Project Does
 
-This project focuses on correct system design, not cosmetic or forced outputs.
+Accepts user-uploaded .txt or .csv files
 
-🚀 Features
+Generalizes sensitive and identifying information
 
-Upload .txt or .csv files from the user end
+Produces privacy-preserving text output
 
-Automatically generalizes and anonymizes:
+Allows users to download the generalized text
 
-Names (PERSON)
-
-Organizations (ORG)
-
-Locations (GPE / LOC)
-
-Email addresses
-
-Phone numbers
-
-Age
-
-Year
-
-Academic degrees
-
-Uses Transformer-based spaCy model (en_core_web_trf)
-
-Stable, generalizable, and data-agnostic
-
-Clean UI built with Streamlit
-
-Download generalized output as a text file
-
-🧠 Design Philosophy (Important)
-
-This project intentionally avoids forcing perfect-looking output.
-
+🧠 Core Design Philosophy
 <div style=" border: 2px solid #7c3aed; border-radius: 10px; padding: 16px; background-color: #0f172a; color: #e5e7eb; ">
 
-<strong>Core Principles</strong>
+<strong>Principles Followed</strong>
 
 <br><br>
 
 • Use NLP only where it is reliable
-• Use rules where structure is deterministic
+• Use rule-based logic where structure is deterministic
 • Do NOT guess semantic meaning
 • Do NOT overfit to one dataset
-• Do NOT patch errors just to look clean
+• Do NOT force output to look perfect
 
 </div>
 
-This mirrors real-world NLP system design used in production environments.
+This mirrors how real NLP systems are designed in production environments.
 
-🏗️ Architecture Overview
+🏗️ System Architecture
 User Upload
-    ↓
+   ↓
 Rule-based Masking
 (Email, Phone, Age, Year, Degree)
-    ↓
-Transformer NER
+   ↓
+NLP Named Entity Recognition
 (PERSON, ORG, GPE, LOC)
-    ↓
+   ↓
 Generalized Output
-    ↓
-Downloadable File
+   ↓
+Downloadable Text File
 
 🧪 Example
 📄 Input Text
-
 Rahul Sharma is a 24-year-old software engineer living in Bengaluru, India.
 He works at Infosys and previously interned at Google.
 
@@ -82,7 +54,10 @@ His email address is rahul@gmail.com and his phone number is +91 9876543210.
 Rahul completed his Bachelor of Technology in Computer Science from IIT Bombay in 2023.
 Last month, Rahul traveled from Bengaluru to Mumbai for an office conference organized by Infosys.
 
-<strong>✨ GENERALIZED OUTPUT</strong>
+✨ Generalized Output
+<div style=" border: 2px solid #7c3aed; border-radius: 10px; padding: 16px; background-color: #0f172a; color: #e5e7eb; font-family: monospace; ">
+
+<strong>GENERALIZED OUTPUT</strong>
 
 <br><br>
 
@@ -100,9 +75,8 @@ PERSON traveled from GPE to GPE for an office conference organized by ORG.
 
 </div>
 
-⚠️ Note
-Minor imperfections are expected and accepted by design.
-The system prioritizes correctness and generalization, not forced perfection.
+⚠️ Minor imperfections are expected and accepted by design.
+The goal is correctness and generalization — not forced perfection.
 
 🛠️ Tech Stack
 
@@ -110,7 +84,7 @@ Python 3.10+
 
 spaCy
 
-Transformer model: en_core_web_trf
+Transformer-based NER (en_core_web_trf)
 
 Streamlit
 
@@ -118,18 +92,11 @@ Pandas
 
 Regex (deterministic masking)
 
-📦 Installation & Setup
-1️⃣ Clone the repository
-git clone https://github.com/your-username/nlp-data-generalizer.git
-cd nlp-data-generalizer
-
-2️⃣ Install dependencies
-pip install streamlit spacy pandas
-
-3️⃣ Download the transformer model
+🚀 Installation & Usage
+git clone https://github.com/NikDev345/NLP_generalizer.git
+cd NLP_generalizer
+pip install -r requirements.txt
 python -m spacy download en_core_web_trf
-
-4️⃣ Run the application
 streamlit run main.py
 
 
@@ -147,7 +114,7 @@ AI training data sanitization
 
 NLP experimentation
 
-Academic and portfolio projects
+Academic & portfolio projects
 
 🔮 Future Improvements
 <div style=" border: 2px solid #22c55e; border-radius: 10px; padding: 16px; background-color: #052e16; color: #dcfce7; ">
@@ -157,7 +124,7 @@ Academic and portfolio projects
 • React frontend
 • Batch file processing
 • Evaluation metrics (precision / recall)
-• GDPR-style anonymization modes
+• Privacy levels (light / medium / strong)
 
 </div>
 🧠 Key Takeaway
@@ -171,4 +138,4 @@ it builds a system that is honest, explainable, and extensible.
 </div>
 📄 License
 
-This project is open-source and available for educational and personal use
+Open-source and available for educational and personal use.
