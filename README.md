@@ -125,10 +125,9 @@ This project demonstrates engineering maturity.
 Instead of forcing outputs to look perfect,
 it builds a system that is honest, explainable, and extensible.
 
-updated the project with new NLP 
-and add FASTAPI to the project 
-will upload it tommrow
 
+this commit just for update 
+we come new update in this project soon 
 </div>
 📄 License
 
